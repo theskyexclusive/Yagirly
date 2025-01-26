@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yagirly</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #D8BFD8; /* Pastel purple */
+            overflow-x: hidden;
+        }
+
+        .header {
+            text-align: center;
+            padding-top: 20px;
+            color: #000; /* Darker black */
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .header h2 {
+            font-size: 8pt; /* Really small font size */
+            font-style: italic;
+            font-family: cursive;
+            margin: 10px 0 0;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* Adds space between images */
+            margin-top: 20px;
+            flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+        }
+
+        .image-container img {
+            width: 100px; /* Resize images to be smaller */
+            height: 100px; /* Keep aspect ratio */
+            border-radius: 50%; /* Make images circular */
+            object-fit: cover; /* Ensures the image covers the circle properly */
+            margin-bottom: 10px; /* Space between images */
+        }
+
+        .body-text {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1rem; /* Original size */
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Spacing between the two videos */
+            flex-wrap: wrap; /* Wrap videos on smaller screens */
+            padding: 10px; /* Add padding to prevent videos from touching edges */
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 380px; /* Constrain the video width */
+            height: 220px; /* Adjust height to keep the aspect ratio */
+            border: none;
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+        }
+
+        .sunset-heading {
+            text-align: center;
+            font-size: 1.2rem; /* Smaller font size */
+            font-style: italic; /* Italicized text */
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        .sunset-images-container {
+            display: flex;
+            overflow-x: auto; /* Make it horizontally scrollable */
+            gap: 10px;
+            padding: 10px 20px;
+        }
+
+        .sunset-images-container img {
+            width: 200px; /* Resize for mobile */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 15px; /* Rounded corners */
+            object-fit: cover; /* Ensures image fills the box properly */
+            flex-shrink: 0; /* Prevent images from shrinking */
+        }
+
+        .bottom-scripture {
+            text-align: center;
+            background-color: #D8BFD8; /* Pastel purple */
+            color: green;
+            padding: 8px 0;
+            position: relative;
+            width: 100%;
+            font-size: 0.9rem; /* Slightly smaller text for mobile */
+        }
+
+        @media (max-width: 768px) {
+            /* Adjust header font sizes for smaller screens */
+            .header h1 {
+                font-size: 2rem;
+            }
+            .header h2 {
+                font-size: 7pt;
+            }
+
+            /* Reduce padding for smaller devices */
+            .video-container {
+                padding: 5px;
+            }
+
+            .body-text {
+                font-size: 0.9rem;
+                margin-top: 10px;
+            }
+
+            .sunset-heading {
+                font-size: 1rem;
+            }
+
+            .bottom-scripture {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Here's A Glimpse of the Sky Exclusive</h1>
+        <h2>Follow me for more...</h2>
+    </div>
+
+    <div class="image-container">
+        <img src="https://i.imgur.com/reK4GDN.jpg" alt="Description of the photo">
+        <img src="https://i.imgur.com/g7aS5XQ.jpg" alt="Description of the photo">
+        <img src="https://i.imgur.com/UFcIC39.jpg" alt="Description of the photo">
+    </div>
+
+    <div class="body-text">
+        <p>Disciple of Christ | Island Girl | Lover of Adventure</p>
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/RNkmDF2CsEU" 
+                title="YouTube video" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/Ii09kTZv-y0" 
+                title="YouTube video" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+    </div>
+
+    <div class="sunset-heading">
+        <h3>My favorite sunset photos</h3>
+    </div>
+    <div class="sunset-images-container">
+        <img src="https://i.imgur.com/UeDlRU9.jpeg" alt="Sunset Image 1">
+	<img src="https://i.imgur.com/GSKr1vO.jpeg" alt="Sunset Image 3">
+        <img src="https://i.imgur.com/r6jtGH6.jpeg" alt="Sunset Image 2">
+	<img src="https://i.imgur.com/Qi9GW1i.jpeg" alt="Sunset Image 5">
+        <img src="https://i.imgur.com/2ePyBEO.jpeg" alt="Sunset Image 4">
+	<img src="https://i.imgur.com/nWTjuLY.jpeg" alt="Sunset Image 6">
+	
+	
+    </div>
+
+    <div class="bottom-scripture">
+        <h2>Romans 1:16</h2>
+        <p>For I am not ashamed of the gospel, because it is the power of God that brings salvation to everyone who believes.</p>
+    </div>
+</body>
+</html>
